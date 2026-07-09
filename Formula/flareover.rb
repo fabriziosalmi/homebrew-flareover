@@ -5,21 +5,21 @@
 class Flareover < Formula
   desc "Deterministic Cloudflare → EU-sovereign migration engine (0% false positives)"
   homepage "https://www.flareover.com"
-  version "0.1.9"
+  version "0.1.10"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.9/flareover_0.1.9_darwin_amd64.tar.gz"
-      sha256 "2a8ee8c527147a69f1aa4b06fbb0bdfe2966dc0ed7e93e9b001e765f22f89264"
+      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.10/flareover_0.1.10_darwin_amd64.tar.gz"
+      sha256 "e57867a6fed697562de39d2bdd89a06bd2cead6b1b9e5d673ffd8a51dc587a7d"
 
       define_method(:install) do
         bin.install "flareover"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.9/flareover_0.1.9_darwin_arm64.tar.gz"
-      sha256 "9d9081aa01fb634d5a9a4345bb4e4a1cb98c6c5183fa08d860caf8db01dbda16"
+      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.10/flareover_0.1.10_darwin_arm64.tar.gz"
+      sha256 "0df5891274c9e227eda2fce05fb6a7d239c73ebba111ed9168ea4a84a5599c35"
 
       define_method(:install) do
         bin.install "flareover"
@@ -29,15 +29,15 @@ class Flareover < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.9/flareover_0.1.9_linux_amd64.tar.gz"
-      sha256 "f89355e555eae6e135bab568384df081d9557bf3729080ab8c82da3cf4abe112"
+      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.10/flareover_0.1.10_linux_amd64.tar.gz"
+      sha256 "72c90f52480b56eb72e045486e3fc8ae56996db10413b02f52e15f9335dee837"
       define_method(:install) do
         bin.install "flareover"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.9/flareover_0.1.9_linux_arm64.tar.gz"
-      sha256 "c92ad94e00c62d5341676c1d9b817f66041e622396d5f8e6aa27f884739b87a0"
+      url "https://github.com/fabriziosalmi/flareover/releases/download/v0.1.10/flareover_0.1.10_linux_arm64.tar.gz"
+      sha256 "09153f540fd9a07832cd861a0337eff0b0792ba0955f66e9b83d344418b44d97"
       define_method(:install) do
         bin.install "flareover"
       end
